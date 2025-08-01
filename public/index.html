@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explain Like I'm 5 | Conversational AI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-fluid vh-100 d-flex flex-column">
+        <header class="text-center py-3">
+            <h1>Explain Like I'm 5</h1>
+            <p class="lead text-muted">Enter a topic, then ask as many follow-up questions as you like!</p>
+        </header>
+
+        <main id="chat-container" class="flex-grow-1 overflow-auto p-3">
+            <!-- Chat messages will be injected here -->
+            <div class="message bot-message">
+                <div class="message-content">
+                    Hello! What complex topic can I simplify for you today?
+                </div>
+            </div>
+        </main>
+
+        <footer class="p-3">
+            <form id="chat-form" class="d-flex">
+                <input type="text" id="message-input" class="form-control" placeholder="Type a topic or a follow-up question..." autocomplete="off">
+                <button type="submit" id="send-button" class="btn btn-primary ms-2">
+                    <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+                    Send
+                </button>
+            </form>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
