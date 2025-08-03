@@ -24,20 +24,6 @@ Built with Google's Gemini 1.5 Flash model, this app maintains conversation cont
 - **Axios** for API requests
 - **Marked.js** for Markdown rendering
 
-## 📁 Project Structure
-
-```
-Gemini_Learn/
-├── app.js                 # Main Express server
-├── package.json           # Dependencies and scripts
-├── routes/
-│   ├── index.js          # Route configuration
-│   └── gemini.js         # Gemini API integration
-└── public/
-    ├── index.html        # Main UI
-    ├── script.js         # Frontend logic
-    └── style.css         # Custom styling
-```
 
 ## 🚦 Getting Started
 
@@ -123,12 +109,6 @@ This is a learning project and is **still in development**! Here's what's workin
 - Topic suggestions
 - Voice input/output
 - Mobile app version
-
-## 👨‍💻 Author
-
-**Sairithik Komuravelly**
-
-Building this for fun and to explore AI integration! Feel free to reach out if you have questions or suggestions.
 
 
 ## 🤝 Contributing
